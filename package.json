@@ -4,7 +4,7 @@
   "description": "Work ticketing app. Made to keep track of things people in a household or workplace as you to do.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
     "ejs": "^4.0.1",
     "express": "^5.2.1",
     "postgres": "^3.4.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

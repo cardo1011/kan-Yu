@@ -1,0 +1,27 @@
+* {
+  font-family: "IBM Plex Mono";
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+header {
+  border-bottom: solid red 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px 0 2px;
+}
+
+#sidenav {
+  border: solid blue 1px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  max-width: 15%;
+}
+
+#sidenav a {
+  margin: 1em 0 1em 0;
+  text-decoration: none;
+}
