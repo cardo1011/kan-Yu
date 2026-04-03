@@ -1,7 +1,7 @@
 * {
   font-family: "IBM Plex Mono";
   font-size: xx-large;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 header {
@@ -24,4 +24,12 @@ header {
 #sidenav a {
   margin: 1em 0 1em 0;
   text-decoration: none;
+}
+
+body {
+  border: solid greenyellow 5px;
+}
+
+footer {
+  border: solid red 1px;
 }
