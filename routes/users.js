@@ -1,5 +1,7 @@
 import express from "express";
-import { nanoid } from "nanoid";
+import bcrypt from "bcrypt";
+import pool from "../db";
+// import { nanoid } from "nanoid";
 const router = express.Router();
 
 router.get("/register", (req, res) => {
@@ -10,10 +12,12 @@ router.post("/register", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
-  const password = req.body.password;
-  const userId = nanoid();
+  const hashedPassword = bcrypt.hash(req.body.password, saltRounds);
+  // const userId = nanoid();
+
   console.log(req.body);
-  console.log(`UUID: ${userId}`);
+  // console.log(`UUID: ${userId}`);
+
   // // write an psql query to be submitted to the table
   // const query = `
   //   INSERT INTO users (first_name, last_name, email, password, user_id)
